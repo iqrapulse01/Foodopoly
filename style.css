@@ -701,6 +701,12 @@ html {
   }
 }
 
+@media (max-width: 650px) {
+.container{
+  width: 100%;
+}
+}
+
 @media (max-width: 1000px) {
   .nav-list {
     flex-direction: column;
@@ -712,11 +718,12 @@ html {
 
   .header-text {
     position: absolute;
+    width: 95%;
     top: 50%;
-    left: 36%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-  }
+}
 
   .popular-tours-heading {
     font-size: 6rem;
@@ -769,7 +776,9 @@ html {
 }
 
 @media (max-width: 650px) {
-  .container {
+  .container{
+    text-align: center;
+    justify-content: center;
     margin: 0;
   }
 
@@ -801,6 +810,10 @@ html {
 }
 
 @media (max-width: 500px) {
+  .container{
+    text-align: center;
+    justify-content: center;
+  }
   .heading{
     font-size:1.8rem;
    }
