@@ -11,32 +11,44 @@
   <title>Why Choose Foodopoly</title>
   <style>
     .why-choose-foodopoly {
-      padding: 50px 25px;
+      padding: 6% 13%;
     }
 
     .why-choose-foodopoly h1 {
       margin-top: 40px;
-      color: #fdfdfd;
+      color: #f39c12;
       font-size: 4rem;
-      margin-top: 80px;
+      text-align: center;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -1px -1px 5px rgba(255, 255, 255, 0.3);
     }
 
     .why-choose-foodopoly h2 {
       font-size: 3rem;
-      color: #fffcfc;
+      color: #4ca64c;
       margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -1px -1px 4px rgba(255, 255, 255, 0.4);
     }
 
     .why-choose-foodopoly ul {
       list-style: none;
       padding: 0;
       margin: 20px 0 40px;
+      text-align: center;
     }
 
     .why-choose-foodopoly ul li {
       font-size: 2rem;
       color: #d4c7c7;
       margin-bottom: 10px;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2), -1px -1px 3px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .why-choose-foodopoly ul li:hover {
+      transform: translateY(-5px);
+      color: #f39c12;
     }
 
     .why-choose-foodopoly .charts {
@@ -49,6 +61,7 @@
     .why-choose-foodopoly .chart {
       flex: 1;
       max-width: 300px;
+      text-align: center;
     }
 
     .why-choose-foodopoly .chart img {
@@ -71,6 +84,9 @@
 
 <body>
   <div class="container wrapper">
+    <div class="logo-top">
+      <img src="img/SplashMaterial/Foodopoly.png" alt="">
+    </div>
     <!-- Navbar -->
     <div class="open-navbar-icon navbar-icon center">
       <div class="line"></div>
@@ -88,10 +104,9 @@
           <a href="/index.html" class="nav-link center">Home</a>
           <a href="/Why-Choose.html" class="nav-link center">Why Foodopoly</a>
           <a href="/tool.html" class="nav-link center">Gamified Tools</a>
-          <a href="/offers.html" class="nav-link center">Introductory Offers</a>
+          <a href="/packages.html" class="nav-link center ">Packages</a>
           <a href="/LimitedTime.html" class="nav-link center">Bonuses</a>
-          <a href="/packages.html" class="nav-link center pack-color">Packages</a>
-          <a href="/contact.html" class="nav-link center contact-color">Contact</a>
+          <a href="/offers.html" class="nav-link center pack-color">Intro Offers</a>
         </div>
       </nav>
     </div>
@@ -107,10 +122,6 @@
           <li>Scalable packages to fit your restaurant's unique needs.</li>
         </ul>
         <div class="charts">
-          <!-- <div class="chart">
-            <img src="chart-monthly-costs.png" alt="Monthly Costs">
-            <p>Monthly Costs</p>
-          </div> -->
           <div class="chart">
             <img src="img/firstwas/Campaigns_Per_Package.png" alt="Campaigns Included">
             <p>Campaigns Included</p>
@@ -122,24 +133,6 @@
         </div>
       </div>
     </section>
-
-
-    <!-- Footer -->
-    <!-- <footer class="footer">
-      <div class="footer-list">
-        <a href="/index.html" class="footer-link">Home</a>
-          <a href="/Why-Choose.html" class="footer-link">Why Foodology?</a>
-          <a href="/packages.html" class="footer-link">Packages</a>
-          <a href="/tool.html" class="footer-link">Gamified Tools</a>
-          <a href="/offers.html" class="footer-link">Introductory Offers</a>
-          <a href="/LimitedTime.html" class="footer-link"> Bonuses</a>
-          <a href="/contact.html" class="footer-link"> Contact</a>
-      </div>
-      <p class="footer-paragraph">
-        Copyright &copy; All Rights Reserved
-      </p>
-    </footer> -->
-    <!-- End of Footer -->
 
   </div>
   <script src="script.js"></script>

@@ -15,7 +15,7 @@ html {
 
 :root {
   --primary-color: rgb(138, 35, 9);
-  --secondary-color: #0f0f0f;
+  --secondary-color: #000;
   --white-color: #fff;
   --grey-color: #412626;
   --light-grey-color: #721e1e;
@@ -177,8 +177,8 @@ html {
 .header {
   width: 100%;
   height: calc(100vh - 7rem);
-  background: linear-gradient(rgba(221, 28, 44, 0.5), rgba(22, 46, 153, 0.3)),
-    url(images/header-bg.jpg) center no-repeat;
+  background: linear-gradient(rgba(7, 7, 7, 0.2), rgba(4, 5, 8, 0.3)),
+    url("https://t4.ftcdn.net/jpg/08/33/51/27/360_F_833512793_uFgKdxk7pRaYtwM76e8MQCpTpbjrNHZH.jpg") center no-repeat;
   background-size: cover;
   position: relative;
   perspective: 100rem;
@@ -188,20 +188,20 @@ html {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  text-shadow: 0 0.3rem 0.5rem var(--grey-color);
+  text-shadow: 0 0.3rem 0.5rem rgb(104, 87, 11);
 }
 
 .heading {
   font-size: 2.5rem;
   text-align: center;
-  color: var(--white-color);
+  color: white;
   margin-left: 10px;
 }
 
 .header-paragraph {
   font-size: 2.3rem;
   font-weight: 500;
-  color: var(--secondary-color);
+  color:white;
   max-width: 100%;
   text-align: center;
   margin-left: 10px;
@@ -333,7 +333,9 @@ html {
 }
 
 .card-image {
-  width: 100%;
+  width: 50%;
+
+  margin-top: 20px;
   border-radius: 0.3rem 0.3rem 0 0;
 }
 
@@ -811,6 +813,23 @@ width: 90%;
     height: 40rem;
   }
 }
+
+/* LOgo-Top  */
+.logo-top {
+  width: 60px;
+  position: absolute;
+  top: 6%;
+  left: 48%; 
+  transform: translateX(-50%);
+}
+.logo-top img{
+  width: 90px;
+}
+
+
+/* LOgo-Top  */
+
+
 
 @media (max-width: 500px) {
   .container{

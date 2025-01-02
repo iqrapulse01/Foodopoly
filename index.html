@@ -1,96 +1,79 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Arrow Page Slider</title>
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      iframe {
-        width: 100vw;
-        height: 100vh;
-        border: none;
-        display: block;
-      }
-      .navigation {
-        position: fixed;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-      }
-      .arrow {
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        background-color:rgb(140, 21, 16);
-        color: white;
-        border: none;
-        font-size: 15px;
-        font-weight: bold;
-        cursor: pointer;
-        margin: 6px;
-      }
-      .arrow:disabled {
-        background-color: rgb(37, 22, 22);
-        cursor: not-allowed;
-      }
-    </style>
-  </head>
-  <body >
-    
-    <iframe id="iframe" src="welcome.html" ></iframe>
 
-    <div class="navigation">
-      <button id="prev" style="    padding: 7.5px !important;" class="arrow" disabled>&lt;</button>
-      <button id="next" class="arrow">&gt;</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Foodopoly - Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Vollkorn', serif;
+    }
+
+    .container {
+      position: relative;
+      width: 95%;
+      height: 100vh;
+      /* background: url('./images/bg-1.jpg') no-repeat center center/cover; */
+      display: flex;
+      flex-direction: column;
+      background: #000;
+      justify-content: space-between;
+    }
+
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Navbar -->
+    <div class="logo-top">
+      <img src="img/SplashMaterial/Foodopoly1.png" alt="">
+    </div>
+    <div class="open-navbar-icon navbar-icon center">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
 
-    <script>
-      // Pages for the slider
-      const pages = [
-        "welcome.html",
-        "main.html",
-        "Why-Choose.html",
-        "packages.html",
-        "tool.html",
-        "offers.html",
-        "LimitedTime.html",
-        "contact.html",
-      ];
+    <div class="navbar-wrapper">
+      <nav class="navbar">
+        <div class="close-navbar-icon navbar-icon center">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+        </div>
+        <div class="nav-list">
+          <a href="/index.html" class="nav-link center">Home</a>
+          <a href="/Why-Choose.html" class="nav-link center">Why Foodopoly</a>
+          <a href="/tool.html" class="nav-link center">Gamified Tools</a>
+          <a href="/packages.html" class="nav-link center ">Packages</a>
+          <a href="/LimitedTime.html" class="nav-link center">Bonuses</a>
+          <a href="/offers.html" class="nav-link center pack-color">Intro Offers</a>
+          <!-- <a href="/contact.html" class="nav-link center contact-color">Contact</a> -->
+        </div>
+      </nav>
+    </div>
+    <!-- End of Navbar -->
 
-      let currentIndex = 0; // Starting page index
-      const iframe = document.getElementById("iframe");
-      const prevButton = document.getElementById("prev");
-      const nextButton = document.getElementById("next");
+    <div class="video_container"
+      style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <video src="img/final.mp4" autoplay loop muted>
+        Your browser does not support the video tag.
+      </video>
+      <h1 style="color: whitesmoke;">Welcome to Foodopoly!</h1>
+    </div>
+  </div>
+</body>
 
-      // Function to update the iframe src and button states
-      function updateIframe() {
-        iframe.src = pages[currentIndex];
-        prevButton.disabled = currentIndex === 0;
-        nextButton.disabled = currentIndex === pages.length - 1;
-      }
-
-      // Event listeners for navigation buttons
-      prevButton.addEventListener("click", () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-          updateIframe();
-        }
-      });
-
-      nextButton.addEventListener("click", () => {
-        if (currentIndex < pages.length - 1) {
-          currentIndex++;
-          updateIframe();
-        }
-      });
-    </script>
-  </body>
 </html>

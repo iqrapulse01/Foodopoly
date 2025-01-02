@@ -16,31 +16,48 @@
       padding: 0;
       box-sizing: border-box;
     }
-.container{
-  background: #afafaf;
-}
+
+    .container {
+      background: #050505;
+    }
+
+    .logo-top img {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
     .gamified-tools {
       padding: 50px 25px;
     }
 
     .gamified-tools h1 {
-      color: #5c0101;
+      color: #ce0808;
+      /* Main text color */
       font-size: 3rem;
-      margin-bottom: 20px;
+      margin-top: 20px;
       text-align: center;
+      text-shadow: -2px -2px 3px rgba(255, 255, 255, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
+
+
     .gamified-tools h2 {
-      color: #8f0101;
+      color: rgb(31, 31, 134);
       font-size: 2.4rem;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
       text-align: center;
+      text-shadow: -2px -2px 3px rgba(255, 255, 255, 0.8), 4px 4px 5px rgba(0, 0, 0, 0.7);
+
     }
+
     .gamified-tools p {
-      color: #500202;
+      color: #faf7f7;
       font-size: 1.8rem;
       margin-bottom: 20px;
       text-align: center;
+      font-weight: bold;
+      text-shadow: -2px -2px 3px rgba(255, 255, 255, 0.8), 4px 4px 5px rgba(0, 0, 0, 0.7);
     }
+
 
     .tools-grid {
       display: flex;
@@ -51,20 +68,28 @@
 
     .tool-card {
       flex: 1 1 calc(33.333% - 20px);
-      border: 1px solid #ddd;
+      border: 1px solid #686767;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 4px;
       background-color: #020202;
       text-align: center;
+      box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.4), 5px 5px 15px rgba(233, 227, 227, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .tool-card:hover {
+      transform: translate(10px, 10px);
+      box-shadow: 10px 10px 20px rgba(252, 251, 251, 0.4);
+    }
+
 
     .tool-card img {
       width: 80%;
       max-height: 300px;
       object-fit: cover;
       margin-bottom: 15px;
-      border-radius: 8px;
-      object-position: 10% top; 
+      border-radius: 3px;
+      object-position: 10% top;
     }
 
     .tool-card h3 {
@@ -86,6 +111,7 @@
       margin-bottom: 5px;
     }
 
+
     @media screen and (max-width: 768px) {
       .tools-grid {
         flex-direction: column;
@@ -100,6 +126,9 @@
 
 <body>
   <div class="container">
+    <div class="logo-top">
+      <img src="img/SplashMaterial/Foodopoly1.png" alt="">
+    </div>
     <!-- Navbar -->
     <div class="open-navbar-icon navbar-icon center">
       <div class="line"></div>
@@ -116,10 +145,9 @@
           <a href="/index.html" class="nav-link center">Home</a>
           <a href="/Why-Choose.html" class="nav-link center">Why Foodopoly</a>
           <a href="/tool.html" class="nav-link center">Gamified Tools</a>
-          <a href="/offers.html" class="nav-link center">Introductory Offers</a>
+          <a href="/packages.html" class="nav-link center ">Packages</a>
           <a href="/LimitedTime.html" class="nav-link center">Bonuses</a>
-          <a href="/packages.html" class="nav-link center pack-color">Packages</a>
-          <a href="/contact.html" class="nav-link center contact-color">Contact</a>
+          <a href="/offers.html" class="nav-link center pack-color">Intro Offers</a>
         </div>
       </nav>
     </div>
@@ -127,18 +155,18 @@
     <section class="gamified-tools">
       <h1>Gamified Tools</h1>
       <h2>Digital Gamified Coupons</h2>
-<p> Provide your audience unique experiences by offering them interactive digital gamified coupons.</p>
-<div class="tool-card">
-  <img src="img/someotherresources/imagekit-restaurant-coupons/restaurant-2-regular coupon.jpg" alt="Spin Wheel">
-  <h3>Advantages</h3>
-  <ul style="padding-left:10%;">
-    <li>Stimulate conversions</li>
-    <li>Provide unique experiences</li>
-    <li>Generate traffic</li>
-    <li>Raise brand awareness</li>
-    <li>Increase customer engagement</li>
-  </ul>
-</div>
+      <p> Provide your audience unique experiences by offering them interactive digital gamified coupons.</p>
+      <div class="tool-card">
+        <img src="img/someotherresources/imagekit-restaurant-coupons/restaurant-2-regular coupon.jpg" alt="Spin Wheel">
+        <h3>Advantages</h3>
+        <ul style="padding-left:10%;">
+          <li>Stimulate conversions</li>
+          <li>Provide unique experiences</li>
+          <li>Generate traffic</li>
+          <li>Raise brand awareness</li>
+          <li>Increase customer engagement</li>
+        </ul>
+      </div>
       <div class="tools-grid">
         <div class="tool-card">
           <img src="img/during text/restaurant-2-spinningwheel.jpg" alt="Spin Wheel">
@@ -195,23 +223,6 @@
         </div>
       </div>
     </section>
-      
-    <!-- Footer -->
-    <!-- <footer class="footer">
-      <div class="footer-list">
-        <a href="/index.html" class="footer-link">Home</a>
-          <a href="/Why-Choose.html" class="footer-link">Why Foodology?</a>
-          <a href="/packages.html" class="footer-link">Packages</a>
-          <a href="/tool.html" class="footer-link">Gamified Tools</a>
-          <a href="/offers.html" class="footer-link">Introductory Offers</a>
-          <a href="/LimitedTime.html" class="footer-link"> Bonuses</a>
-          <a href="/contact.html" class="footer-link"> Contact</a>
-      </div>
-      <p class="footer-paragraph">
-        Copyright &copy; All Rights Reserved
-      </p>
-    </footer> -->
-    <!-- End of Footer -->
 
   </div>
   <script src="script.js"></script>
