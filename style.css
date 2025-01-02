@@ -725,7 +725,13 @@ html {
     transform: translate(-50%, -50%);
     z-index: 10;
   }
-
+.vieww{
+  height: 100vh;
+  padding-top: 60px !important;
+}
+.viewww{
+  margin-top: 60px;
+}
   .popular-tours-heading {
     font-size: 6rem;
   }
