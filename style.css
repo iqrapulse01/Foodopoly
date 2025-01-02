@@ -794,12 +794,15 @@ html {
   .navbar-wrapper {
     padding: 0;
   }
-  .popular-tours h1{
-font-size: 20px !important;
-padding-top: 30px !important;
+  .popular-tours h1 {
+    font-size: 20px !important;
+    padding-top: 30px !important;
   }
-  .tour-name{
-    font-size: 12px !important;
+  .front-side h1{
+    font-size: 14px !important;
+  }
+  .front-side .card-list{
+    margin-top: 15px;
   }
 
   .close-navbar-icon {
