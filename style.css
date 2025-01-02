@@ -817,7 +817,7 @@ html {
 .logo-top {
   width: 60px;
   position: absolute;
-  top: 6%;
+  top: 0;
   left: 48%;
   transform: translateX(-50%);
 }
