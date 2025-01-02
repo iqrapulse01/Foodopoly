@@ -798,6 +798,9 @@ html {
 font-size: 20px !important;
 padding-top: 30px !important;
   }
+  .tour-name{
+    font-size: 14px !important;
+  }
 
   .close-navbar-icon {
     right: 4rem;
