@@ -794,6 +794,9 @@ html {
   .navbar-wrapper {
     padding: 0;
   }
+  .popular-tours h1{
+font-size: 18px !important;
+  }
 
   .close-navbar-icon {
     right: 4rem;
